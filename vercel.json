@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/book/:id", "destination": "/api/og-book?id=:id" },
+    { "source": "/((?!api/|assets/|.*\\..*).*)", "destination": "/index.html" }
+  ]
+}
