@@ -1,0 +1,25 @@
+{
+  "rewrites": [
+    {
+      "source": "/book/:id",
+      "destination": "/api/og-book?id=:id"
+    },
+    {
+      "source": "/((?!api/|assets/|.*\\..*).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "crons": [
+    {
+      "path": "/api/sync-sheet",
+      "schedule": "0 17 * * *"
+    },
+    {
+      "path": "/api/fill-covers",
+      "schedule": "0 18 * * *"
+    }
+  ],
+  "regions": [
+    "icn1"
+  ]
+}
